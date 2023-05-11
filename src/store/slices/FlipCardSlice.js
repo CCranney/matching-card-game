@@ -31,10 +31,15 @@ const flipCardSlice = createSlice({
                     state.boardFlippedStates[action.payload] = !state.boardFlippedStates[action.payload];
                     break;
                 case 1: 
-                    state.boardFlippedStates[action.payload] = !state.boardFlippedStates[action.payload];
                     const firstCardIdx = indices[0];
                     const secondCardIdx = action.payload;
-                    if (firstCardIdx !== secondCardIdx && state.boardCards[firstCardIdx] === state.boardCards[secondCardIdx]) {
+
+                    if (firstCardIdx === secondCardIdx) {
+                        break;
+                    }
+                    state.boardFlippedStates[action.payload] = !state.boardFlippedStates[action.payload];
+
+                    if (state.boardCards[firstCardIdx] === state.boardCards[secondCardIdx]) {
                         state.recentWinners = [firstCardIdx, secondCardIdx];
                         state.isFirstPlayerTurn ? state.firstPlayerScore += 1 : state.secondPlayerScore += 1
                     }
