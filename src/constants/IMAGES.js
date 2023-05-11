@@ -1,12 +1,12 @@
 const IMAGES = [
-    `url("/pictures/alligator.jpg")`,
-    `url("/pictures/elephant.png")`,
-    `url("/pictures/flamingo.jpg")`,
-    `url("/pictures/giraffe.png")`,
-    `url("/pictures/lion.jpg")`,
-    `url("/pictures/monkey.jpg")`,
-    `url("/pictures/rhino.png")`,
-    `url("/pictures/zebra.png")`,
+    `url("./public/pictures/alligator.jpg")`,
+    `url("./public/pictures/elephant.png")`,
+    `url("./public/pictures/flamingo.jpg")`,
+    `url("./public/pictures/giraffe.png")`,
+    `url("./public/pictures/lion.jpg")`,
+    `url("./public/pictures/monkey.jpg")`,
+    `url("./public/pictures/rhino.png")`,
+    `url("./public/pictures/zebra.png")`,
 ];
 
 export default IMAGES
