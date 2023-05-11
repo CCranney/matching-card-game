@@ -1,0 +1,52 @@
+.card {
+    height: 100%;
+    width: 100%;
+
+    transform-style: preserve-3d;
+
+    position:relative;
+
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.8);
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.card-back, 
+.card-front {
+
+    height: 100%;
+    width: 100%;
+
+    -webkit-backface-visibility: hidden; /* check what happens when you delete these */
+    backface-visibility: hidden;
+
+    position:absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-family: Montserat;
+    font-weight: 800;
+    font-size: 16px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+    
+}
+
+.card-front {
+    background-color: #00137c;
+}
+
+.card-front:hover {
+    background-color: #00407c;
+}
+
+.card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+}

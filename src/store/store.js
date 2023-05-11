@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import FlipCardReducer from './slices/FlipCardSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    flipCard: FlipCardReducer
   },
 });
