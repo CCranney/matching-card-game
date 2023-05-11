@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/matching-card-game/static/css/main.f466f0c4.css",
-    "main.js": "/matching-card-game/static/js/main.892db43c.js",
-    "index.html": "/matching-card-game/index.html",
-    "main.f466f0c4.css.map": "/matching-card-game/static/css/main.f466f0c4.css.map",
-    "main.892db43c.js.map": "/matching-card-game/static/js/main.892db43c.js.map"
+    "main.css": "http://localhost:3000/static/css/main.f466f0c4.css",
+    "main.js": "http://localhost:3000/static/js/main.892db43c.js",
+    "index.html": "http://localhost:3000/index.html",
+    "main.f466f0c4.css.map": "http://localhost:3000/static/css/main.f466f0c4.css.map",
+    "main.892db43c.js.map": "http://localhost:3000/static/js/main.892db43c.js.map"
   },
   "entrypoints": [
     "static/css/main.f466f0c4.css",
